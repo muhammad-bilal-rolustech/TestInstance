@@ -1,0 +1,18 @@
+<apex:page controller="testController">
+    <p>
+        Change from eclipse
+    </p>
+    <apex:form >
+  
+        <apex:pageBlock >
+           <apex:pageBlockTable value="{!teachers}" var="teach">
+            <apex:column value="{!teach.Name}"/>
+               <apex:column value="{!teach.Grade__c}"/>
+               <apex:column value="{!teach.qualification__c}"/>
+               <apex:column value="{!teach.old_grade__c}"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+        
+        
+    </apex:form>
+</apex:page>
